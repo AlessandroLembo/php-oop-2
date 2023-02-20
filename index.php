@@ -1,8 +1,8 @@
 <?php
 
-class product
+class Product
 {
-    public $image;
+    // public $image;
     public $name;
     public $code;
     public $price;
@@ -10,20 +10,25 @@ class product
     public $description;
     public $product_weight;
     public $shipment;
+    public $quantity_available;
 
 
-    public function __construct($image, $name, $code, $price, $category, $description, $product_weight, $shipment = 0)
+    public function __construct($name, $code, $price, $category, $description, $product_weight, $quantity_available)
     {
-        $this->image = $image;
+        // $this->image = $image;
         $this->name = $name;
         $this->code = $code;
         $this->price = $price;
         $this->category = $category;
         $this->description = $description;
-        $this->shipment = $shipment;
         $this->product_weight = $product_weight;
+        $this->quantity_available = $quantity_available;
     }
 }
+
+$product1 = new Product('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12);
+
+echo $product1->description;
 
 
 
