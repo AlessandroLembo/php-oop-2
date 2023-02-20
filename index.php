@@ -2,7 +2,7 @@
 
 require __DIR__ . '/data.php';
 
-echo $bed_cat->description;
+// echo $bed_cat->description;
 
 ?>
 
@@ -18,11 +18,27 @@ echo $bed_cat->description;
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="container">
         <div class="row">
+            <?php foreach ($products as $product) : ?>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-title"><?= $product->name ?></div>
+                            <p class="card-text">Euro<?= $product->price ?></p>
+                            <p class="card-text">Prodotto per: <?= $product->category ?></p>
+                            <p class="card-text">Codiec prodotto:<?= $product->code ?></p>
+
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 

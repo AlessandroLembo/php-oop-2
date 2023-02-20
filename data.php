@@ -7,9 +7,9 @@ require_once __DIR__ . '/models/Kennel.php';
 
 $chicken_can = new Food(
     'scatoletta di pollo',
-    22345,
+    'Food - 22345',
     4,
-    'dog',
+    '<i class="fa-solid fa-dog"></i>',
     'Traboccante di carne magra di pollo e tacchino',
     '300 grams',
     12,
@@ -19,9 +19,9 @@ $chicken_can = new Food(
 
 $beef_can = new Food(
     'scatoletta di manzo',
-    18341,
+    'Food - 18341',
     5,
-    'cat',
+    '<i class="fa-solid fa-cat"></i>',
     'Alimento umido completo per gatti adulti in lattina, che assicura freschezza e varietà per ogni pasto!',
     '340 grams',
     9,
@@ -31,9 +31,9 @@ $beef_can = new Food(
 
 $bone = new Game(
     'Hunter bone',
-    37890,
+    'Game - 37890',
     8,
-    'dog',
+    '<i class="fa-solid fa-dog"></i>',
     'Osso gioco Hunter per la cura dei denti e delle gengive dei cani di taglia media e grande',
     '180 grams',
     6,
@@ -44,9 +44,9 @@ $bone = new Game(
 
 $yoyo = new Game(
     'Yo yo ball',
-    41232,
+    'Game - 41232',
     5,
-    'cat',
+    '<i class="fa-solid fa-cat"></i>',
     'Giocattolo Elettrico Per Gatti Giocattolo Interattivo',
     '260 grams',
     14,
@@ -57,9 +57,9 @@ $yoyo = new Game(
 
 $kennel_dog = new Kennel(
     'Spike kenel',
-    23767,
+    'Kennel - 23767',
     34,
-    'dog',
+    '<i class="fa-solid fa-dog"></i>',
     'Cuccia per cani Spike Comfort in legno pretrattato, resistente alle intemperie, con tetto spiovente ',
     '4,5 kilograms',
     3,
@@ -71,9 +71,9 @@ $kennel_dog = new Kennel(
 
 $bed_cat = new Kennel(
     'Cozy Cord',
-    11889,
+    'Kennel - 11889',
     29,
-    'cat',
+    '<i class="fa-solid fa-cat"></i>',
     'Morbido letto Cozy Cord per cani e gatti in simil velluto a coste larghe grigio scuro',
     '2,3 kilograms',
     5,
@@ -83,4 +83,4 @@ $bed_cat = new Kennel(
     'L 51 x P 43 x H 15 cm'
 );
 
-$product = [$chicken_can, $beef_can, $bone, $yoyo, $kennel_dog, $bed_cat];
+$products = [$chicken_can, $beef_can, $bone, $yoyo, $kennel_dog, $bed_cat];
