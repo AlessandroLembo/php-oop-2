@@ -30,7 +30,7 @@ require __DIR__ . '/data.php';
                         <img src="<?= $product->image ?>" class="card-img-top" alt="<?= $product->name ?>">
                         <div class="card-body text-center">
                             <h2 class="card-title fs-5"><?= $product->uppercaseName() ?></h2>
-                            <p class="card-text">Prezzo originale Euro <?= $product->price ?></p>
+                            <p class="card-text">Prezzo originale Euro <?= $product->getPrice() ?></p>
                             <p class="card-text">Prezzo scontato Euro <?= $product->getDiscountedPrice(20) ?></p>
                             <p class="card-text">Prodotto per <?= $product->category ?></p>
                             <p class="card-text fst-italic">Codice prodotto: <?= $product->code ?></p>
