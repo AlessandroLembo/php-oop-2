@@ -24,16 +24,17 @@ require __DIR__ . '/data.php';
 
 <body>
     <div class="container">
+        <h1 class="text-center mt-5">Scegli ciò che ti serve per il tuo animale domestico!</h1>
         <div class="row">
             <?php foreach ($products as $product) : ?>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="card-title"><?= $product->name ?></div>
-                            <p class="card-text">Euro<?= $product->price ?></p>
-                            <p class="card-text">Prodotto per: <?= $product->category ?></p>
-                            <p class="card-text">Codiec prodotto:<?= $product->code ?></p>
+                <div class="col-4 my-5">
+                    <div class="card pb-5" style="width: 18rem;">
+                        <img src="<?= $product->image ?>" class="card-img-top" alt="<?= $product->name ?>">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-3"><?= $product->name ?></h2>
+                            <p class="card-text">Euro <?= $product->price ?></p>
+                            <p class="card-text">Prodotto per <?= $product->category ?></p>
+                            <p class="card-text fst-italic">Codice prodotto: <?= $product->code ?></p>
 
                         </div>
                     </div>

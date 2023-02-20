@@ -9,10 +9,10 @@ class Game extends Product
     public $color;
 
 
-    public function __construct($name, $code, $price, $category, $description, $product_weight, $quantity_available, $material, $return_product, $color)
+    public function __construct($image, $name, $code, $price, $category, $description, $product_weight, $quantity_available, $material, $return_product, $color)
     {
 
-        parent::__construct($name, $code, $price, $category, $description, $product_weight, $quantity_available);
+        parent::__construct($image, $name, $code, $price, $category, $description, $product_weight, $quantity_available);
 
         $this->material = $material;
         $this->return_product = $return_product;

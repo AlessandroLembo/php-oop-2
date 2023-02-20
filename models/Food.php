@@ -8,10 +8,10 @@ class Food extends Product
     public $expiry_date;
 
 
-    public function __construct($name, $code, $price, $category, $description, $product_weight, $quantity_available, $ingredient, $expiry_date)
+    public function __construct($image, $name, $code, $price, $category, $description, $product_weight, $quantity_available, $ingredient, $expiry_date)
     {
 
-        parent::__construct($name, $code, $price, $category, $description, $product_weight, $quantity_available);
+        parent::__construct($image, $name, $code, $price, $category, $description, $product_weight, $quantity_available);
 
         $this->ingredient = $ingredient;
         $this->expiry_date = $expiry_date;
