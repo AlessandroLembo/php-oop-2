@@ -24,4 +24,9 @@ class Product
         $this->product_weight = $product_weight;
         $this->quantity_available = $quantity_available;
     }
+
+    public function uppercaseName()
+    {
+        return strtoupper($this->name);
+    }
 }

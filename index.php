@@ -2,8 +2,6 @@
 
 require __DIR__ . '/data.php';
 
-// echo $bed_cat->description;
-
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +29,7 @@ require __DIR__ . '/data.php';
                     <div class="card pb-5" style="width: 18rem;">
                         <img src="<?= $product->image ?>" class="card-img-top" alt="<?= $product->name ?>">
                         <div class="card-body text-center">
-                            <h2 class="card-title fs-3"><?= $product->name ?></h2>
+                            <h2 class="card-title fs-5"><?= $product->uppercaseName() ?></h2>
                             <p class="card-text">Euro <?= $product->price ?></p>
                             <p class="card-text">Prodotto per <?= $product->category ?></p>
                             <p class="card-text fst-italic">Codice prodotto: <?= $product->code ?></p>
