@@ -4,7 +4,7 @@ class Product
 {
     public $image;
     public $name;
-    public $code;
+    private $code;
     private $price;
     private $category;
     public $description;
@@ -17,12 +17,23 @@ class Product
     {
         $this->image = $image;
         $this->name = $name;
-        $this->code = $code;
+        $this->setCode($code);
         $this->setPrice($price);
         $this->setCategory($category);
         $this->description = $description;
         $this->product_weight = $product_weight;
         $this->quantity_available = $quantity_available;
+    }
+
+    private function setCode($code)
+    {
+        if (is_numeric($code) || $code == '') return false;
+        $this->code = $code;
+    }
+
+    public function getCode()
+    {
+        return $this->code;
     }
 
     private function setPrice($price)

@@ -26,14 +26,14 @@ require __DIR__ . '/data.php';
         <div class="row">
             <?php foreach ($products as $product) : ?>
                 <div class="col-4 my-5">
-                    <div class="card pb-5" style="width: 18rem;">
+                    <div class="card pb-5 mx-auto" style="width: 18rem;">
                         <img src="<?= $product->image ?>" class="card-img-top" alt="<?= $product->name ?>">
                         <div class="card-body text-center">
                             <h2 class="card-title fs-5"><?= $product->uppercaseName() ?></h2>
                             <p class="card-text">Prezzo originale Euro <?= $product->getPrice() ?></p>
                             <p class="card-text">Prezzo scontato Euro <?= $product->getDiscountedPrice(20) ?></p>
                             <p class="card-text">Prodotto per <?= $product->getCategory() ?></p>
-                            <p class="card-text fst-italic">Codice prodotto: <?= $product->code ?></p>
+                            <p class="card-text fst-italic">Codice prodotto: <?= $product->getCode() ?></p>
 
                         </div>
                     </div>
