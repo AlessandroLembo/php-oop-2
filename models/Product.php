@@ -29,4 +29,11 @@ class Product
     {
         return strtoupper($this->name);
     }
+
+    public function getDiscountedPrice($percentage)
+    {
+        $discount = $this->price - ($this->price * ($percentage / 100));
+
+        return number_format($discount, 2);
+    }
 }
