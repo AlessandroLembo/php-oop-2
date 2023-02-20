@@ -1,11 +1,13 @@
 <?php
 require __DIR__ . '/models/Product.php';
 require __DIR__ . '/models/Food.php';
+require __DIR__ . '/models/gameForAnimals.php';
 
 
 // $product1 = new Product('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12);
-$food1 = new Food('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'water', '23-08-2023');
-echo $food1->expiry_date;
+// $food1 = new Food('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'water', '23-08-2023');
+$game1 = new Game('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'wood', 'yes', 'red');
+echo $game1->material;
 
 
 
