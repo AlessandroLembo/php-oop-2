@@ -1,40 +1,15 @@
 <?php
-
-class Product
-{
-    // public $image;
-    public $name;
-    public $code;
-    public $price;
-    public $category;
-    public $description;
-    public $product_weight;
-    public $shipment;
-    public $quantity_available;
+require __DIR__ . '/models/Product.php';
+require __DIR__ . '/models/Food.php';
 
 
-    public function __construct($name, $code, $price, $category, $description, $product_weight, $quantity_available)
-    {
-        // $this->image = $image;
-        $this->name = $name;
-        $this->code = $code;
-        $this->price = $price;
-        $this->category = $category;
-        $this->description = $description;
-        $this->product_weight = $product_weight;
-        $this->quantity_available = $quantity_available;
-    }
-}
-
-$product1 = new Product('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12);
-
-echo $product1->description;
+// $product1 = new Product('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12);
+$food1 = new Food('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'water', '23-08-2023');
+echo $food1->expiry_date;
 
 
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
