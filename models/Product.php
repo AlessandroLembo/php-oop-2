@@ -6,7 +6,7 @@ class Product
     public $name;
     public $code;
     private $price;
-    public $category;
+    private $category;
     public $description;
     public $product_weight;
     public $shipment;
@@ -19,7 +19,7 @@ class Product
         $this->name = $name;
         $this->code = $code;
         $this->setPrice($price);
-        $this->category = $category;
+        $this->setCategory($category);
         $this->description = $description;
         $this->product_weight = $product_weight;
         $this->quantity_available = $quantity_available;
@@ -34,6 +34,17 @@ class Product
     public function getPrice()
     {
         return $this->price;
+    }
+
+    private function setCategory($category)
+    {
+        if ($category == '' || is_numeric($category)) return false;
+        $this->category = $category;
+    }
+
+    public function getCategory()
+    {
+        return $this->category;
     }
 
     public function uppercaseName()

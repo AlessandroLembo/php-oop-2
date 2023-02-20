@@ -32,7 +32,7 @@ require __DIR__ . '/data.php';
                             <h2 class="card-title fs-5"><?= $product->uppercaseName() ?></h2>
                             <p class="card-text">Prezzo originale Euro <?= $product->getPrice() ?></p>
                             <p class="card-text">Prezzo scontato Euro <?= $product->getDiscountedPrice(20) ?></p>
-                            <p class="card-text">Prodotto per <?= $product->category ?></p>
+                            <p class="card-text">Prodotto per <?= $product->getCategory() ?></p>
                             <p class="card-text fst-italic">Codice prodotto: <?= $product->code ?></p>
 
                         </div>
