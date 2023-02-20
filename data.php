@@ -35,7 +35,7 @@ $bone = new Game(
     'https://shop-cdn-m.mediazs.com/bilder/osso/gioco/hunter/per/ligiene/dentale/dei/cani/0/400/d_top_seller_1000x1000_0.jpg',
     'Hunter bone',
     'Game - 37890',
-    8,
+    18,
     '<i class="fa-solid fa-dog"></i>',
     'Osso gioco Hunter per la cura dei denti e delle gengive dei cani di taglia media e grande',
     '180 grams',

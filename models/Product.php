@@ -36,6 +36,11 @@ class Product
         return $this->code;
     }
 
+    public function buildTextCode()
+    {
+        return "Codice prodotto: " . $this->getCode();
+    }
+
     private function setPrice($price)
     {
         if (!is_numeric($price) || $price < 0)  return false;
@@ -45,6 +50,11 @@ class Product
     public function getPrice()
     {
         return $this->price;
+    }
+
+    public function buildTextPrice()
+    {
+        return "Prezzo originale Euro " . $this->getPrice();
     }
 
     private function setCategory($category)
@@ -58,6 +68,11 @@ class Product
         return $this->category;
     }
 
+    public function buildTextCategory()
+    {
+        return "Prodotto per " . $this->getCategory();
+    }
+
     public function uppercaseName()
     {
         return strtoupper($this->name);
@@ -68,5 +83,10 @@ class Product
         $discount = $this->price - ($this->price * ($percentage / 100));
 
         return number_format($discount, 2);
+    }
+
+    public function buildTextDiscount()
+    {
+        return "Prezzo scontato Euro " . $this->getDiscountedPrice(15);
     }
 }
