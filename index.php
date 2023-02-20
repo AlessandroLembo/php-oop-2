@@ -1,6 +1,35 @@
 <?php
 
+class product
+{
+    public $image;
+    public $name;
+    public $code;
+    public $price;
+    public $category;
+    public $description;
+    public $product_weight;
+    public $shipment;
+
+
+    public function __construct($image, $name, $code, $price, $category, $description, $product_weight, $shipment = 0)
+    {
+        $this->image = $image;
+        $this->name = $name;
+        $this->code = $code;
+        $this->price = $price;
+        $this->category = $category;
+        $this->description = $description;
+        $this->shipment = $shipment;
+        $this->product_weight = $product_weight;
+    }
+}
+
+
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
