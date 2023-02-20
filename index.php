@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/models/Product.php';
 require __DIR__ . '/models/Food.php';
-require __DIR__ . '/models/gameForAnimals.php';
+require __DIR__ . '/models/GameForAnimals.php';
 require __DIR__ . '/models/Kennel.php';
 
 
@@ -9,8 +9,8 @@ require __DIR__ . '/models/Kennel.php';
 // $product1 = new Product('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12);
 // $food1 = new Food('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'water', '23-08-2023');
 // $game1 = new Game('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'wood', 'yes', 'red');
-$kennel1 = new Kennel('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, '50 height, 90 width, 50 depth');
-echo $kennel1->measures;
+$kennel1 = new Kennel('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'wood', 'yes', 'red', '50 height, 90 width, 50 depth');
+echo $kennel1->description;
 
 
 
@@ -31,6 +31,19 @@ echo $kennel1->measures;
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-4 my-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
 
 </body>
 
