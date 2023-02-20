@@ -1,4 +1,9 @@
 <?php
+require_once __DIR__ . '/models/Product.php';
+require_once __DIR__ . '/models/Food.php';
+require_once __DIR__ . '/models/GameForAnimals.php';
+require_once __DIR__ . '/models/Kennel.php';
+
 
 $chicken_can = new Food(
     'scatoletta di pollo',
@@ -77,3 +82,5 @@ $bed_cat = new Kennel(
     'grey',
     'L 51 x P 43 x H 15 cm'
 );
+
+$product = [$chicken_can, $beef_can, $bone, $yoyo, $kennel_dog, $bed_cat];

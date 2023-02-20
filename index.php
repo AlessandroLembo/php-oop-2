@@ -1,9 +1,8 @@
 <?php
-require __DIR__ . '/models/Product.php';
-require __DIR__ . '/models/Food.php';
-require __DIR__ . '/models/GameForAnimals.php';
-require __DIR__ . '/models/Kennel.php';
+
 require __DIR__ . '/data.php';
+
+echo $bed_cat->description;
 
 ?>
 
@@ -24,15 +23,6 @@ require __DIR__ . '/data.php';
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-4 my-5">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
