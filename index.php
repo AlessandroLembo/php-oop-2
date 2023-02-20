@@ -3,16 +3,7 @@ require __DIR__ . '/models/Product.php';
 require __DIR__ . '/models/Food.php';
 require __DIR__ . '/models/GameForAnimals.php';
 require __DIR__ . '/models/Kennel.php';
-
-
-
-// $product1 = new Product('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12);
-// $food1 = new Food('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'water', '23-08-2023');
-// $game1 = new Game('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'wood', 'yes', 'red');
-$kennel1 = new Kennel('scatoletta pollo', 22345, 4, 'dog', 'Traboccante di carne magra di pollo e tacchino', '300 grams', 12, 'wood', 'yes', 'red', '50 height, 90 width, 50 depth');
-echo $kennel1->description;
-
-
+require __DIR__ . '/data.php';
 
 ?>
 
@@ -33,7 +24,7 @@ echo $kennel1->description;
 <body>
     <div class="container">
         <div class="row">
-            <!-- <div class="col-4 my-5">
+            <div class="col-4 my-5">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
@@ -41,7 +32,7 @@ echo $kennel1->description;
 
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 
