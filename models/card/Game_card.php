@@ -20,7 +20,7 @@
                 <p class="card-text fst-italic"><?= $game->buildTextCode() ?></p>
                 <p class="card-text fst-italic">Materiale prodotto: <?= $game->material ?></p>
                 <p class="card-text fst-italic">Colore prodotto: <?= $game->color ?></p>
-                <p class="card-text">Possibiltà di reso: <i class="<?= $game->return_product ?>"></i></p>
+                <p class="card-text text-success">Possibiltà di reso: <i class="<?= $game->return_product ?>"></i></p>
             </div>
         </div>
     </div>

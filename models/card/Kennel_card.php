@@ -20,7 +20,7 @@
                 <p class="card-text fst-italic"><?= $kennel->buildTextCode() ?></p>
                 <p class="card-text fst-italic">Materiale prodotto: <?= $kennel->material ?></p>
                 <p class="card-text fst-italic">Colore prodotto: <?= $kennel->color ?></p>
-                <p class="card-text">Possibiltà di reso: <i class="<?= $kennel->return_product ?>"></i></p>
+                <p class="card-text text-danger">Possibiltà di reso: <i class="<?= $kennel->return_product ?>"></i></p>
 
             </div>
         </div>

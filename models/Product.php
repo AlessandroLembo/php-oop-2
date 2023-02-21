@@ -15,7 +15,7 @@ class Product
     public $quantity_available;
 
 
-    public function __construct($image, $name, $code, $price, Category $category, $description, $product_weight, $quantity_available)
+    public function __construct($image, $name, $code, $price, Category $category, $description, $product_weight, $shipment, $quantity_available)
     {
         $this->setImage($image);
         $this->setName($name);
@@ -24,6 +24,7 @@ class Product
         $this->setCategory($category);
         $this->description = $description;
         $this->product_weight = $product_weight;
+        $this->shipment = $shipment;
         $this->quantity_available = $quantity_available;
     }
 
@@ -67,7 +68,9 @@ class Product
 
     public function setPrice($price)
     {
-        if (!is_numeric($price) || $price < 0)  return false;
+        if (!is_numeric($price) || $price < 0) {
+            throw new Exception('Il prezzo deve essere un valore numerico');
+        }
         $this->price = $price;
     }
 

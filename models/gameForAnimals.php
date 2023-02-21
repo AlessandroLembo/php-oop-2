@@ -8,10 +8,10 @@ class Game extends Product
     use Feature;
 
 
-    public function __construct($image, $name, $code, $price, $category, $description, $product_weight, $quantity_available, $material, $return_product, $color)
+    public function __construct($image, $name, $code, $price, Category $category, $description, $product_weight, $shipment, $quantity_available, $material, $return_product, $color)
     {
 
-        parent::__construct($image, $name, $code, $price, $category, $description, $product_weight, $quantity_available);
+        parent::__construct($image, $name, $code, $price, $category, $description, $product_weight, $shipment, $quantity_available);
 
         $this->material = $material;
         $this->return_product = $return_product;
