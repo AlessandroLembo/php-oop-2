@@ -42,7 +42,7 @@ $bone = new Game(
     '180 grams',
     6,
     'rubber',
-    'yes',
+    'fa-solid fa-circle-check',
     'orange/black',
 );
 
@@ -56,7 +56,7 @@ $yoyo = new Game(
     '260 grams',
     14,
     'plastic',
-    'yes',
+    'fa-solid fa-circle-check',
     'pink/black',
 );
 
@@ -70,7 +70,7 @@ $kennel_dog = new Kennel(
     '4,5 kilograms',
     3,
     'wood',
-    'no',
+    'fa-solid fa-xmark',
     'brown',
     'P 72 x L 76 x H 76 cm'
 );
@@ -85,7 +85,7 @@ $bed_cat = new Kennel(
     '2,3 kilograms',
     5,
     'peluche',
-    'no',
+    'fa-solid fa-xmark',
     'grey',
     'L 51 x P 43 x H 15 cm'
 );
