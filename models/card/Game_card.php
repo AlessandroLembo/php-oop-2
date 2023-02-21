@@ -18,6 +18,8 @@
                 <p class="card-text"><?= $game->buildTextPrice() ?></p>
                 <p class="card-text"><?= $game->buildTextDiscount() ?></p>
                 <p class="card-text fst-italic"><?= $game->buildTextCode() ?></p>
+                <p class="card-text fst-italic">Materiale prodotto: <?= $game->material ?></p>
+                <p class="card-text fst-italic">Colore prodotto: <?= $game->color ?></p>
 
             </div>
         </div>

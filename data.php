@@ -43,7 +43,7 @@ $bone = new Game(
     6,
     'rubber',
     'yes',
-    'orange/black'
+    'orange/black',
 );
 
 $yoyo = new Game(
@@ -57,7 +57,7 @@ $yoyo = new Game(
     14,
     'plastic',
     'yes',
-    'pink/black'
+    'pink/black',
 );
 
 $kennel_dog = new Kennel(

@@ -18,7 +18,8 @@
                 <p class="card-text"><?= $kennel->buildTextPrice() ?></p>
                 <p class="card-text"><?= $kennel->buildTextDiscount() ?></p>
                 <p class="card-text fst-italic"><?= $kennel->buildTextCode() ?></p>
-
+                <p class="card-text fst-italic">Materiale prodotto: <?= $kennel->material ?></p>
+                <p class="card-text fst-italic">Colore prodotto: <?= $kennel->color ?></p>
             </div>
         </div>
     </div>
