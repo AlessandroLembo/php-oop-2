@@ -4,7 +4,7 @@ require_once __DIR__ . '/Category.php';
 
 class Product
 {
-    public $image;
+    private $image;
     public $name;
     private $code;
     private $price;
@@ -17,7 +17,7 @@ class Product
 
     public function __construct($image, $name, $code, $price, Category $category, $description, $product_weight, $quantity_available)
     {
-        $this->image = $image;
+        $this->setImage($image);
         $this->name = $name;
         $this->setCode($code);
         $this->setPrice($price);
@@ -25,6 +25,17 @@ class Product
         $this->description = $description;
         $this->product_weight = $product_weight;
         $this->quantity_available = $quantity_available;
+    }
+
+    public function setImage($image)
+    {
+        $this->image = $image;
+        return $this;
+    }
+
+    public function getImage()
+    {
+        return $this->image;
     }
 
     public function setCode($code)
