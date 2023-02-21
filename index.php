@@ -32,7 +32,7 @@ require __DIR__ . '/data.php';
                             <h2 class="card-title fs-5"><?= $product->uppercaseName() ?></h2>
                             <p class="card-text"><?= $product->buildTextPrice() ?></p>
                             <p class="card-text"><?= $product->buildTextDiscount() ?></p>
-                            <p class="card-text"><?= $product->buildTextCategory() ?></p>
+                            <p class="card-text"><i class="<?= $product->getCategory()->getIcon() ?>"></i></p>
                             <p class="card-text fst-italic"><?= $product->buildTextCode() ?></p>
 
                         </div>

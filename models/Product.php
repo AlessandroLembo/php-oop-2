@@ -1,19 +1,21 @@
 <?php
 
+require_once __DIR__ . '/Category.php';
+
 class Product
 {
     public $image;
     public $name;
     private $code;
     private $price;
-    private $category;
+    protected $category;
     public $description;
     public $product_weight;
     public $shipment;
     public $quantity_available;
 
 
-    public function __construct($image, $name, $code, $price, $category, $description, $product_weight, $quantity_available)
+    public function __construct($image, $name, $code, $price, Category $category, $description, $product_weight, $quantity_available)
     {
         $this->image = $image;
         $this->name = $name;
@@ -25,7 +27,7 @@ class Product
         $this->quantity_available = $quantity_available;
     }
 
-    private function setCode($code)
+    public function setCode($code)
     {
         if (is_numeric($code) || $code == '') return false;
         $this->code = $code;
@@ -41,7 +43,7 @@ class Product
         return "Codice prodotto: " . $this->getCode();
     }
 
-    private function setPrice($price)
+    public function setPrice($price)
     {
         if (!is_numeric($price) || $price < 0)  return false;
         $this->price = $price;
@@ -57,10 +59,12 @@ class Product
         return "Prezzo originale Euro " . $this->getPrice();
     }
 
-    private function setCategory($category)
+    public function setCategory($category)
     {
-        if ($category == '' || is_numeric($category)) return false;
+        if ($category instanceof Category === false) return false;
         $this->category = $category;
+
+        return $this;
     }
 
     public function getCategory()
