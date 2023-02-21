@@ -5,8 +5,6 @@ require_once __DIR__ . '/models/GameForAnimals.php';
 require_once __DIR__ . '/models/Kennel.php';
 
 
-$category_dog = new Category('Dog', 'fa-solid fa-dog');
-$category_cat = new Category('Cat', 'fa-solid fa-cat');
 
 $chicken_can = new Food(
     'https://www.isoladeitesori.it/dw/image/v2/BGRZ_PRD/on/demandware.static/-/Sites-it-master-catalog/default/dwe881004e/idt/naturalpet_vaschetta_adult_pollo__tacchino_e_verdure_150_gr__8032611671562_160924.jpg?sw=800&sh=800',
@@ -92,4 +90,6 @@ $bed_cat = new Kennel(
     'L 51 x P 43 x H 15 cm'
 );
 
-$products = [$chicken_can, $beef_can, $bone, $yoyo, $kennel_dog, $bed_cat];
+$foods = [$chicken_can, $beef_can];
+$games = [$bone, $yoyo];
+$kennels = [$kennel_dog, $bed_cat];

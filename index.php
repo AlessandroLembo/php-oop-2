@@ -24,21 +24,21 @@ require __DIR__ . '/data.php';
     <div class="container">
         <h1 class="text-center mt-5">Scegli ciò che ti serve per il tuo animale domestico!</h1>
         <div class="row">
-            <?php foreach ($products as $product) : ?>
-                <div class="col-4 my-5">
-                    <div class="card pb-5 mx-auto" style="width: 18rem;">
-                        <img src="<?= $product->image ?>" class="card-img-top" alt="<?= $product->name ?>">
-                        <div class="card-body text-center">
-                            <h2 class="card-title fs-5"><?= $product->uppercaseName() ?></h2>
-                            <p class="card-text"><?= $product->buildTextPrice() ?></p>
-                            <p class="card-text"><?= $product->buildTextDiscount() ?></p>
-                            <p class="card-text"><i class="<?= $product->getCategory()->getIcon() ?>"></i></p>
-                            <p class="card-text fst-italic"><?= $product->buildTextCode() ?></p>
+            <h2 class="text-center fs-1 text-uppercase mt-5">Food category</h2>
+            <?php foreach ($foods as $food) include __DIR__ . '/models/card/Food_card.php'; ?>
 
-                        </div>
-                    </div>
-                </div>
-            <?php endforeach; ?>
+        </div>
+
+        <div class="row">
+            <h2 class="text-center fs-1 text-uppercase mt-5">Games category</h2>
+            <?php foreach ($games as $game) include __DIR__ . '/models/card/Game_card.php'; ?>
+
+        </div>
+
+        <div class="row">
+            <h2 class="text-center fs-1 text-uppercase mt-5">Kennel category</h2>
+            <?php foreach ($kennels as $kennel) include __DIR__ . '/models/card/Kennel_card.php'; ?>
+
         </div>
     </div>
 

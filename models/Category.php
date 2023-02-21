@@ -34,3 +34,6 @@ class Category
         return $this;
     }
 }
+
+$category_dog = new Category('Dog', 'fa-solid fa-dog');
+$category_cat = new Category('Cat', 'fa-solid fa-cat');
