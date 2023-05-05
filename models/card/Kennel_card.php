@@ -10,7 +10,7 @@
 
 <body>
     <div class="col-6 my-5">
-        <div class="card pb-5 mx-auto text-center" style="width: 18rem;">
+        <div class="card pb-5 mx-auto text-center card-product" style="width: 18rem;">
             <p class="card-text fs-4 pt-3"><strong>Prodotto per </strong><i class="<?= $kennel->getCategory()->getIcon() ?>"></i></p>
             <img src="<?= $kennel->getImage() ?>" class="card-img-top" alt="<?= $kennel->getName() ?>">
             <div class="card-body">
