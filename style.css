@@ -1,0 +1,18 @@
+body{
+    background-color: lightgrey;
+}
+
+.wrapper{
+   min-height: 600px;
+   max-width: 1200px;
+   margin: 3rem auto;
+   background-color: skyblue;
+}
+
+.card-product{
+    cursor: pointer;
+}
+
+.card-product:hover{
+    transform: translateY(-10px);
+}
