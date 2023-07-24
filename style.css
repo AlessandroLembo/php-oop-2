@@ -1,12 +1,12 @@
 body{
-    background-color: lightgrey;
+    background-color: whitesmoke;
 }
 
 .wrapper{
    min-height: 600px;
    max-width: 1200px;
    margin: 3rem auto;
-   background-color: skyblue;
+   background-color: lightgray;
 }
 
 .card-product{
@@ -14,5 +14,6 @@ body{
 }
 
 .card-product:hover{
-    transform: translateY(-10px);
+    transform: translateY(-15px);
+    border: 2px solid darkgray;
 }
